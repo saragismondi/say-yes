@@ -1513,3 +1513,167 @@ p:last-child { margin-bottom: 0; }
   .team-grid { grid-template-columns: 1fr; }
   .contact-bar__info { flex-direction: column; gap: var(--sp-xs); }
 }
+
+
+/* ============================================================
+   PAGE: MARRIAGE & RELATIONSHIPS
+   ============================================================ */
+
+/* 1 — Intro headline */
+.marriage-intro {
+  padding-block: var(--sp-lg);
+  text-align: center;
+}
+
+.marriage-intro h2 {
+  font-size: clamp(1.8em, 4.5vw, 3em);
+  line-height: 1.2;
+}
+
+.marriage-intro h2 em {
+  font-style: italic;
+  color: var(--pink);
+}
+
+/* 2 — Featured article */
+.marriage-featured {
+  padding-bottom: var(--sp-lg);
+}
+
+.marriage-featured__article {
+  margin-bottom: var(--sp-lg);
+}
+
+.marriage-featured__label {
+  font-size: 1em;
+  font-style: italic;
+  color: var(--pink);
+  font-weight: 700;
+  margin-bottom: 0.3em;
+}
+
+.marriage-featured__title {
+  font-size: clamp(1.3em, 2.5vw, 1.8em);
+  margin-bottom: var(--sp-sm);
+}
+
+.marriage-featured__img {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  max-height: 420px;
+  background-color: var(--gray-light);
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--sp-sm);
+}
+
+.marriage-featured__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.marriage-featured__excerpt {
+  color: var(--gray);
+  font-size: 0.95em;
+  line-height: 1.8;
+  margin-bottom: var(--sp-sm);
+}
+
+/* 3 — Articles row */
+.marriage-articles-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+}
+
+/* 4 — Keep the love alive */
+.love-alive {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 28em;
+}
+
+.love-alive__img {
+  background-color: var(--dark);
+  min-height: 28em;
+  overflow: hidden;
+}
+
+.love-alive__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.love-alive__text {
+  background-color: var(--blush);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--sp-lg) var(--sp-md);
+  text-align: center;
+  gap: 0.5em;
+}
+
+.love-alive__text h2 {
+  font-size: clamp(2em, 5vw, 3.5em);
+  line-height: 1.1;
+}
+
+.love-alive__text p {
+  font-size: 1em;
+  color: var(--gray);
+  font-style: italic;
+}
+
+/* 5 — Date Ideas */
+.date-ideas {
+  padding-block: var(--sp-lg);
+}
+
+.date-ideas__heading {
+  margin-bottom: var(--sp-md);
+}
+
+.date-ideas__heading h3 {
+  font-size: clamp(1.3em, 2.5vw, 1.75em);
+}
+
+.date-ideas__heading p {
+  color: var(--pink);
+  font-style: italic;
+  font-size: 0.95em;
+}
+
+.date-ideas__grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 1.5em;
+  align-items: start;
+}
+
+.date-ideas__main .card-img {
+  aspect-ratio: 4 / 3;
+}
+
+.date-ideas__side {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* MARRIAGE — Tablet ≤ 960px */
+@media (max-width: 960px) {
+  .marriage-articles-row { grid-template-columns: repeat(2, 1fr); }
+  .love-alive { grid-template-columns: 1fr; }
+  .love-alive__img { min-height: 20em; }
+  .date-ideas__grid { grid-template-columns: 1fr; }
+}
+
+/* MARRIAGE — Mobile ≤ 640px */
+@media (max-width: 640px) {
+  .marriage-articles-row { grid-template-columns: 1fr; }
+  .marriage-featured__img { aspect-ratio: 4 / 3; max-height: none; }
+}
