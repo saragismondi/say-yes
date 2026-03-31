@@ -2006,3 +2006,117 @@ p:last-child { margin-bottom: 0; }
   .episode-row { grid-template-columns: 80px 1fr; gap: var(--sp-sm); }
   .episode-row__img { width: 80px; }
 }
+
+
+/* ============================================================
+   PAGE: PLANNING & INSPIRATION (Blog)
+   ============================================================ */
+
+/* 1 — Featured article */
+.blog-featured {
+  padding-block: var(--sp-lg);
+}
+
+.blog-featured__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background: var(--white);
+  min-height: 360px;
+}
+
+.blog-featured__img {
+  background-color: var(--gray-light);
+  overflow: hidden;
+}
+
+.blog-featured__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 360px;
+}
+
+.blog-featured__info {
+  padding: var(--sp-md) var(--sp-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6em;
+}
+
+.blog-featured__info h2 {
+  font-size: clamp(1.4em, 2.8vw, 2em);
+  line-height: 1.2;
+}
+
+.blog-featured__info .card-excerpt {
+  font-size: 0.95em;
+  line-height: 1.8;
+}
+
+/* 2 — Category filter tabs */
+.blog-filters {
+  padding-bottom: var(--sp-sm);
+  border-bottom: 1px solid rgba(40, 40, 40, 0.08);
+  margin-bottom: var(--sp-md);
+}
+
+.blog-filters__list {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+.blog-filter-btn {
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.5em 1.2em;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid rgba(40, 40, 40, 0.15);
+  color: var(--gray);
+  background: transparent;
+  cursor: pointer;
+  transition: border-color var(--transition), color var(--transition),
+              background-color var(--transition);
+}
+
+.blog-filter-btn:hover,
+.blog-filter-btn.active {
+  border-color: var(--pink);
+  color: var(--pink);
+  background-color: rgba(235, 113, 150, 0.06);
+}
+
+/* 3 — Articles grid */
+.blog-grid {
+  padding-bottom: var(--sp-lg);
+}
+
+.blog-grid__heading {
+  margin-bottom: var(--sp-md);
+}
+
+.blog-grid__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+}
+
+/* BLOG — Tablet ≤ 960px */
+@media (max-width: 960px) {
+  .blog-featured__card { grid-template-columns: 1fr; }
+  .blog-featured__img img { min-height: 240px; }
+  .blog-featured__info { padding: var(--sp-md); }
+  .blog-grid__cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* BLOG — Mobile ≤ 640px */
+@media (max-width: 640px) {
+  .blog-grid__cards { grid-template-columns: 1fr; }
+  .blog-filters__list { gap: 0.35em; }
+}
