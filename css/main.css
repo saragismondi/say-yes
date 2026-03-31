@@ -588,7 +588,7 @@ p:last-child { margin-bottom: 0; }
 .footer-bottom {
   margin-top: var(--sp-md);
   padding-block: 1em;
-  border-top: 1px solid rgba(235, 113, 150, 0.18);
+  background-color: var(--pink);
 }
 
 .footer-bottom .container {
@@ -597,7 +597,7 @@ p:last-child { margin-bottom: 0; }
   justify-content: space-between;
   gap: var(--sp-sm);
   font-size: 0.72em;
-  color: var(--gray);
+  color: var(--white);
 }
 
 .footer-bottom-links {
@@ -606,12 +606,12 @@ p:last-child { margin-bottom: 0; }
 }
 
 .footer-bottom-links a {
-  color: var(--gray);
-  transition: color var(--transition);
+  color: var(--white);
+  transition: opacity var(--transition);
 }
 
 .footer-bottom-links a:hover {
-  color: var(--pink);
+  opacity: 0.75;
 }
 
 
