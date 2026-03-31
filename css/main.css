@@ -1141,7 +1141,7 @@ p:last-child { margin-bottom: 0; }
 
 /* 5 — Podcast Banner */
 .podcast-banner {
-  background-color: var(--dark);
+  background-color: var(--pink);
   overflow: hidden;
 }
 
@@ -1161,7 +1161,7 @@ p:last-child { margin-bottom: 0; }
 .podcast-banner__brand {
   font-size: 1.3em;
   font-weight: 700;
-  color: var(--pink);
+  color: var(--dark);
   line-height: 1;
   margin-bottom: 0;
 }
@@ -1186,7 +1186,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .podcast-banner__img {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(0, 0, 0, 0.08);
   overflow: hidden;
 }
 
@@ -1196,7 +1196,51 @@ p:last-child { margin-bottom: 0; }
   object-fit: cover;
 }
 
-/* 6 — About Preview */
+/* 6 — Blog Entry (Home) */
+.blog-entry-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-xl);
+  align-items: center;
+}
+
+.blog-entry__label {
+  font-size: 1em;
+  font-weight: 700;
+  color: var(--dark);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5em;
+}
+
+.blog-entry__label .display {
+  font-size: 1.4em;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--pink);
+}
+
+.blog-entry__title {
+  font-size: clamp(1.6em, 3.5vw, 2.4em);
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.2;
+  margin-bottom: 0.6em;
+}
+
+.blog-entry__img {
+  aspect-ratio: 3 / 4;
+  background-color: var(--gray-light);
+  overflow: hidden;
+}
+
+.blog-entry__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 7 — About Preview */
 .about-preview {
   padding-block: var(--sp-lg);
 }
@@ -1268,6 +1312,8 @@ p:last-child { margin-bottom: 0; }
   .featured-grid { grid-template-columns: 1fr; }
   .podcast-banner__inner { grid-template-columns: 1fr; }
   .podcast-banner__img { display: none; }
+  .blog-entry-grid { grid-template-columns: 1fr; }
+  .blog-entry__img { aspect-ratio: 16 / 9; }
   .about-preview__grid { grid-template-columns: 1fr; gap: var(--sp-md); }
   .about-preview__logo img { max-width: 200px; }
   .contact-grid { grid-template-columns: 1fr; gap: var(--sp-md); }
@@ -2012,7 +2058,24 @@ p:last-child { margin-bottom: 0; }
    PAGE: PLANNING & INSPIRATION (Blog)
    ============================================================ */
 
-/* 1 — Featured article */
+/* 1 — Intro headline */
+.blog-intro {
+  padding-block: var(--sp-md);
+}
+
+.blog-intro h2 {
+  font-size: clamp(1.8em, 4vw, 3em);
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.15;
+}
+
+.blog-intro h2 em {
+  font-style: italic;
+  color: var(--pink);
+}
+
+/* 2 — Featured article */
 .blog-featured {
   padding-block: var(--sp-lg);
 }
@@ -2057,54 +2120,134 @@ p:last-child { margin-bottom: 0; }
   line-height: 1.8;
 }
 
-/* 2 — Category filter tabs */
-.blog-filters {
-  padding-bottom: var(--sp-sm);
-  border-bottom: 1px solid rgba(40, 40, 40, 0.08);
-  margin-bottom: var(--sp-md);
-}
-
-.blog-filters__list {
-  display: flex;
-  gap: 0.5em;
-  flex-wrap: wrap;
-}
-
-.blog-filter-btn {
-  font-size: 0.8em;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 0.5em 1.2em;
-  border-radius: var(--radius-pill);
-  border: 1.5px solid rgba(40, 40, 40, 0.15);
-  color: var(--gray);
-  background: transparent;
-  cursor: pointer;
-  transition: border-color var(--transition), color var(--transition),
-              background-color var(--transition);
-}
-
-.blog-filter-btn:hover,
-.blog-filter-btn.active {
-  border-color: var(--pink);
-  color: var(--pink);
-  background-color: rgba(235, 113, 150, 0.06);
-}
-
-/* 3 — Articles grid */
-.blog-grid {
-  padding-bottom: var(--sp-lg);
-}
-
-.blog-grid__heading {
-  margin-bottom: var(--sp-md);
-}
-
-.blog-grid__cards {
+/* 3 — Three cards row */
+.blog-cards-row__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5em;
+}
+
+/* 4 — Decoration ideas banner */
+.deco-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 22em;
+  overflow: hidden;
+}
+
+.deco-banner__img {
+  background-color: var(--gray-light);
+  overflow: hidden;
+}
+
+.deco-banner__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.deco-banner__text {
+  background-color: var(--blush);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--sp-lg) var(--sp-xl);
+}
+
+.deco-banner__title {
+  font-size: clamp(2em, 4vw, 3em);
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.1;
+  margin-bottom: 0.4em;
+}
+
+.deco-banner__title .display {
+  color: var(--pink);
+  font-size: 1.3em;
+  line-height: 1;
+}
+
+.deco-banner__sub {
+  font-size: 1em;
+  color: var(--gray);
+}
+
+/* 5 — Decor feature (large + side) */
+.decor-feature__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-xl);
+  align-items: start;
+}
+
+.decor-feature__main .card-img {
+  aspect-ratio: 4 / 3;
+  background-color: var(--gray-light);
+  overflow: hidden;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+.decor-feature__main .card-body {
+  padding-top: var(--sp-sm);
+}
+
+.decor-feature__main .card-title {
+  font-size: clamp(1.3em, 2.5vw, 1.8em);
+  line-height: 1.25;
+  margin-bottom: 0.4em;
+}
+
+.decor-feature__side {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-md);
+}
+
+/* 6 — Dress & Beauty cards */
+.dress-beauty__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5em;
+}
+
+/* 7 — Make the Right Choice banner */
+.choice-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 22em;
+  overflow: hidden;
+}
+
+.choice-banner__img {
+  background-color: var(--gray-light);
+  overflow: hidden;
+}
+
+.choice-banner__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.choice-banner__text {
+  background-color: var(--blush);
+  display: flex;
+  align-items: center;
+  padding: var(--sp-lg) var(--sp-xl);
+}
+
+.choice-banner__text h2 {
+  font-size: clamp(1.8em, 3.5vw, 2.8em);
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.15;
+}
+
+.choice-banner__text .display {
+  color: var(--pink);
+  font-size: 1.2em;
+  line-height: 1;
 }
 
 /* BLOG — Tablet ≤ 960px */
@@ -2112,11 +2255,18 @@ p:last-child { margin-bottom: 0; }
   .blog-featured__card { grid-template-columns: 1fr; }
   .blog-featured__img img { min-height: 240px; }
   .blog-featured__info { padding: var(--sp-md); }
-  .blog-grid__cards { grid-template-columns: repeat(2, 1fr); }
+  .blog-cards-row__grid { grid-template-columns: repeat(2, 1fr); }
+  .deco-banner { grid-template-columns: 1fr; }
+  .deco-banner__img { min-height: 16em; }
+  .decor-feature__grid { grid-template-columns: 1fr; }
+  .dress-beauty__grid { grid-template-columns: 1fr; }
+  .choice-banner { grid-template-columns: 1fr; }
+  .choice-banner__img { min-height: 16em; }
 }
 
 /* BLOG — Mobile ≤ 640px */
 @media (max-width: 640px) {
-  .blog-grid__cards { grid-template-columns: 1fr; }
-  .blog-filters__list { gap: 0.35em; }
+  .blog-cards-row__grid { grid-template-columns: 1fr; }
+  .deco-banner__text { padding: var(--sp-md); }
+  .choice-banner__text { padding: var(--sp-md); }
 }
