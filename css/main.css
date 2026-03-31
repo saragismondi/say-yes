@@ -1283,3 +1283,233 @@ p:last-child { margin-bottom: 0; }
   .podcast-banner__title { font-size: 3em; }
   .contact-lead__you { font-size: 4em; }
 }
+
+
+/* ============================================================
+   PAGE: ABOUT US
+   ============================================================ */
+
+/* 1 — Magazine Info */
+.magazine-info {
+  padding-block: var(--sp-lg);
+}
+
+.magazine-info__grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: var(--sp-xl);
+  align-items: start;
+}
+
+.magazine-info__logo img {
+  max-width: 100%;
+}
+
+.magazine-info__content h2 {
+  margin-bottom: var(--sp-sm);
+}
+
+.magazine-info__text p {
+  color: var(--gray);
+  font-size: 0.95em;
+  line-height: 1.85;
+}
+
+/* 2 — Meet the Team */
+.team-section {
+  padding-block: var(--sp-lg);
+}
+
+.team-section__heading {
+  text-align: center;
+  margin-bottom: var(--sp-md);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+}
+
+.team-card {
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.team-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-3px);
+}
+
+.team-card__img {
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: var(--gray-light);
+  overflow: hidden;
+}
+
+.team-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.team-card__info {
+  padding: 1.25em;
+}
+
+.team-card__role {
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--pink);
+  margin-bottom: 0.3em;
+}
+
+.team-card__name {
+  font-size: 1.05em;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 0.5em;
+}
+
+.team-card__bio {
+  font-size: 0.85em;
+  color: var(--gray);
+  line-height: 1.65;
+}
+
+/* 3 — Contact Bar */
+.contact-bar {
+  padding-block: var(--sp-md);
+  border-top: 1px solid rgba(235, 113, 150, 0.15);
+  border-bottom: 1px solid rgba(235, 113, 150, 0.15);
+}
+
+.contact-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-md);
+  flex-wrap: wrap;
+}
+
+.contact-bar__social {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+}
+
+.contact-bar__social strong {
+  font-size: 0.88em;
+  color: var(--dark);
+  white-space: nowrap;
+}
+
+.contact-bar__icons {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+
+.contact-bar__icons a {
+  display: flex;
+  align-items: center;
+  color: var(--gray);
+  transition: opacity var(--transition);
+}
+
+.contact-bar__icons a:hover {
+  opacity: 0.65;
+}
+
+.contact-bar__icons img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.contact-bar__info {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-md);
+  flex-wrap: wrap;
+  font-size: 0.9em;
+  color: var(--gray);
+}
+
+.contact-bar__info a {
+  color: var(--dark);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  transition: color var(--transition);
+}
+
+.contact-bar__info a:hover {
+  color: var(--pink);
+}
+
+.contact-bar__info img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+/* 4 — Get in Touch */
+.get-in-touch {
+  padding-block: var(--sp-lg);
+}
+
+.git-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-xl);
+  align-items: center;
+}
+
+.git-lead .git-eyebrow {
+  font-size: 0.78em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 0.5em;
+}
+
+.git-lead h2 {
+  font-size: clamp(1.6em, 3.5vw, 2.4em);
+  line-height: 1.15;
+}
+
+.git-lead h2 .display {
+  color: var(--pink);
+  font-size: 1.1em;
+}
+
+.git-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9em;
+}
+
+/* ABOUT — Tablet ≤ 960px */
+@media (max-width: 960px) {
+  .magazine-info__grid { grid-template-columns: 1fr; gap: var(--sp-md); }
+  .magazine-info__logo img { max-width: 200px; }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .contact-bar__inner { flex-direction: column; align-items: flex-start; }
+  .git-grid { grid-template-columns: 1fr; gap: var(--sp-md); }
+}
+
+/* ABOUT — Mobile ≤ 640px */
+@media (max-width: 640px) {
+  .team-grid { grid-template-columns: 1fr; }
+  .contact-bar__info { flex-direction: column; gap: var(--sp-xs); }
+}
