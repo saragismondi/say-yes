@@ -3,45 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Said Yes Magazine — Inspiring stories about love, weddings, and relationships.">
+  <meta name="description" content="Said Yes Magazine - Inspiring stories about love, weddings, and relationships.">
   <title>Said Yes Magazine</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="home-page">
 
-  <!-- =====================================================
-       HEADER
-       ===================================================== -->
   <header class="site-header">
-
     <div class="header-topbar">
       <div class="container">
-        <a href="index.html" class="header-logo" aria-label="Said Yes Magazine — Home">
-          <img src="logos/YES01.png" alt="Said Yes Magazine">
+        <a href="index.html" class="header-logo" aria-label="Said Yes Magazine home">
+          <img src="logos/SAID-YES-LOGO_CLEAR.png" alt="Said Yes Magazine">
         </a>
         <div class="header-social">
           <span class="social-label">Follow Us</span>
-          <span class="divider">|</span>
-          <a href="#" class="social-handle" target="_blank" rel="noopener">@SaidYes</a>
           <a href="#" class="social-icon-link" aria-label="Instagram" target="_blank" rel="noopener">
-            <img src="SVG-say-yes/SVG/instagram-svgrepo-com.svg" alt="" width="17" height="17" aria-hidden="true">
+            <img src="img/SVG/instagram-svgrepo-com.svg" alt="" width="18" height="18" aria-hidden="true">
           </a>
+          <a href="#" class="social-handle" target="_blank" rel="noopener">@saidyes</a>
         </div>
       </div>
     </div>
+  </header>
 
-    <nav class="site-nav" aria-label="Main navigation">
+  <main id="main-content" class="home-main">
+    <section class="hero-home" aria-label="Hero">
+      <img src="img/01 HOME/HOME-HERO.jpg" alt="Bride standing by a window">
+    </section>
+
+    <nav class="site-nav home-hero-nav" aria-label="Main navigation">
       <div class="container">
         <ul class="nav-list" id="nav-list" role="list">
           <li><a href="index.html">Home</a></li>
           <li><a href="blog.html">Planning &amp; Inspiration</a></li>
           <li><a href="podcast.html">Podcast</a></li>
           <li><a href="marriage.html">Marriage</a></li>
-          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">About us</a></li>
         </ul>
-        <button class="nav-toggle" id="nav-toggle"
-                aria-label="Toggle navigation" aria-expanded="false"
-                aria-controls="nav-list">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-list">
           <span></span>
           <span></span>
           <span></span>
@@ -49,253 +48,169 @@
       </div>
     </nav>
 
-  </header>
-
-
-  <!-- =====================================================
-       MAIN CONTENT
-       ===================================================== -->
-  <main id="main-content">
-
-    <!-- ── 1. HERO ──────────────────────────────────────── -->
-    <section class="hero-home" aria-label="Hero">
-      <!-- Cuando tengas la imagen descomenta esta línea y borra el div de abajo: -->
-      <!-- <img src="img/hero-home.jpg" alt="Novia mirando por la ventana"> -->
-      <div style="min-height:calc(100vh - var(--topbar-height) - var(--nav-height)); background-color:var(--gray-light);"></div>
-    </section>
-
-
-    <!-- ── 2. WE SAID YES ────────────────────────────────── -->
     <section class="section wsy-section">
       <div class="container">
-
         <div class="wsy-intro">
-          <div class="wsy-title">
+          <div class="wsy-title" aria-label="We said yes">
             <span class="wsy-said">WE SAID</span>
-            <span class="wsy-yes">yes</span>
+            <img src="logos/YES01.png" alt="yes" class="wsy-yes">
           </div>
           <p class="wsy-sub">Get inspired by reading<br>these beautiful stories</p>
         </div>
 
         <div class="wsy-grid">
-
-          <article class="card">
-            <div class="card-img img-placeholder">
-              <!-- <img src="img/couple-01.jpg" alt="Man & Woman's name"> -->
+          <article class="wsy-card">
+            <div class="wsy-card__img">
+              <img src="img/IMG-RANDOM/IMG-05.jpg" alt="Man and woman's name">
             </div>
-            <div class="card-body">
-              <p class="card-label">Man &amp; Woman's name</p>
-              <p class="card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-              <a href="#" class="read-more">Read more</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-img img-placeholder">
-              <!-- <img src="img/couple-02.jpg" alt="Man & Woman's name"> -->
-            </div>
-            <div class="card-body">
-              <p class="card-label">Man &amp; Woman's name</p>
-              <p class="card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-              <a href="#" class="read-more">Read more</a>
+            <div class="wsy-card__body">
+              <p class="wsy-card__title">Man &amp; Woman&apos;s name</p>
+              <p class="wsy-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+              <a href="#" class="wsy-card__link">Read more</a>
             </div>
           </article>
 
-          <article class="card">
-            <div class="card-img img-placeholder">
-              <!-- <img src="img/couple-03.jpg" alt="Man & Woman's name"> -->
+          <article class="wsy-card">
+            <div class="wsy-card__img">
+              <img src="img/IMG-RANDOM/IMG-05.jpg" alt="Man and woman's name">
             </div>
-            <div class="card-body">
-              <p class="card-label">Man &amp; Woman's name</p>
-              <p class="card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-              <a href="#" class="read-more">Read more</a>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-img img-placeholder">
-              <!-- <img src="img/couple-04.jpg" alt="Man & Woman's name"> -->
-            </div>
-            <div class="card-body">
-              <p class="card-label">Man &amp; Woman's name</p>
-              <p class="card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-              <a href="#" class="read-more">Read more</a>
+            <div class="wsy-card__body">
+              <p class="wsy-card__title">Man &amp; Woman&apos;s name</p>
+              <p class="wsy-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+              <a href="#" class="wsy-card__link">Read more</a>
             </div>
           </article>
 
+          <article class="wsy-card">
+            <div class="wsy-card__img">
+              <img src="img/IMG-RANDOM/IMG-05.jpg" alt="Man and woman's name">
+            </div>
+            <div class="wsy-card__body">
+              <p class="wsy-card__title">Man &amp; Woman&apos;s name</p>
+              <p class="wsy-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+              <a href="#" class="wsy-card__link">Read more</a>
+            </div>
+          </article>
+
+          <article class="wsy-card">
+            <div class="wsy-card__img">
+              <img src="img/IMG-RANDOM/IMG-05.jpg" alt="Man and woman's name">
+            </div>
+            <div class="wsy-card__body">
+              <p class="wsy-card__title">Man &amp; Woman&apos;s name</p>
+              <p class="wsy-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+              <a href="#" class="wsy-card__link">Read more</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-
-    <!-- ── 3. QUOTE ──────────────────────────────────────── -->
-    <section class="quote-section" aria-label="Quote">
-
-      <div class="quote-image img-placeholder">
-        <!-- <img src="img/rings.jpg" alt="Wedding rings"> -->
-      </div>
-
-      <div class="quote-text">
-        <blockquote>
-          <span class="qt-sm">What</span>
-          <span class="qt-lg">God</span>
-          <span class="qt-sm">has joined</span>
-          <span class="qt-lg">together</span>
-          <span class="qt-foot">let NO ONE separate</span>
-        </blockquote>
-      </div>
-
+    <section class="home-quote-banner" aria-label="What God has joined together">
+      <img src="img/01 HOME/PHRASE-BANNER.jpg" alt="What God has joined together let no one separate">
     </section>
 
-
-    <!-- ── 4. FEATURED ARTICLES ──────────────────────────── -->
     <section class="section featured-section">
       <div class="container">
         <div class="featured-grid">
-
-          <!-- Main large card -->
           <article class="card featured-main">
-            <div class="card-img img-placeholder">
-              <!-- <img src="img/featured-main.jpg" alt="Featured article"> -->
+            <div class="featured-heading">
+              <p class="eyebrow">Featured article</p>
+              <p class="featured-subtitle">Subtitle</p>
+            </div>
+            <div class="card-img">
+              <img src="img/IMG-RANDOM/IMG-01.jpg" alt="Featured article">
             </div>
             <div class="card-body">
-              <p class="eyebrow">Featured article</p>
-              <p class="card-label">Subtitle</p>
-              <p class="card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-              <a href="#" class="read-more">Read more →</a>
+              <p class="card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <a href="marriage.html" class="read-more">Read more +</a>
             </div>
           </article>
 
-          <!-- Side cards -->
           <div class="featured-side">
-
             <article class="featured-side-card">
-              <div class="featured-side-card__img img-placeholder">
-                <!-- <img src="img/article-02.jpg" alt="Article 02"> -->
-              </div>
-              <div class="card-body">
+              <div class="featured-heading">
                 <p class="eyebrow">Article 02</p>
-                <p class="card-label">Subtitle</p>
-                <p class="card-excerpt">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</p>
-                <a href="#" class="read-more">Read more →</a>
+                <p class="featured-subtitle">Subtitle</p>
+              </div>
+              <div class="featured-side-card__img">
+                <img src="img/IMG-RANDOM/IMG-02.jpg" alt="Article 02">
               </div>
             </article>
 
             <article class="featured-side-card">
-              <div class="featured-side-card__img img-placeholder">
-                <!-- <img src="img/article-03.jpg" alt="Article 03"> -->
-              </div>
-              <div class="card-body">
+              <div class="featured-heading">
                 <p class="eyebrow">Article 03</p>
-                <p class="card-label">Subtitle</p>
-                <p class="card-excerpt">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</p>
-                <a href="#" class="read-more">Read more →</a>
+                <p class="featured-subtitle">Subtitle</p>
+              </div>
+              <div class="featured-side-card__img">
+                <img src="img/IMG-RANDOM/IMG-02.jpg" alt="Article 03">
               </div>
             </article>
-
           </div>
         </div>
       </div>
     </section>
 
-
-    <!-- ── 5. PODCAST BANNER ─────────────────────────────── -->
-    <section class="podcast-banner" aria-label="SaidYes Podcast">
-      <div class="container podcast-banner__inner">
-
-        <div class="podcast-banner__text">
-          <p class="podcast-banner__brand">SaidYes</p>
-          <h2 class="podcast-banner__title">PODCAST</h2>
-          <a href="podcast.html" class="podcast-banner__cta">Watch now...</a>
-        </div>
-
-        <div class="podcast-banner__img img-placeholder">
-          <!-- <img src="img/podcast-laptop.jpg" alt="SaidYes Podcast"> -->
-        </div>
-
-      </div>
+    <section class="home-podcast-banner" aria-label="Said Yes Podcast">
+      <a href="podcast.html">
+        <img src="img/01 HOME/PODCAST-BANNER.jpg" alt="Said Yes Podcast listen now">
+      </a>
     </section>
 
-
-    <!-- ── 6. BLOG ENTRY ────────────────────────────────── -->
-    <section class="section blog-entry-section">
+    <section class="section home-about">
       <div class="container">
-        <div class="blog-entry-grid">
-
-          <div class="blog-entry__text">
-            <p class="blog-entry__label"><span class="display">BLOG</span> / Entry</p>
-            <h2 class="blog-entry__title">News title</h2>
-            <p class="card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <a href="#" class="read-more">Read more →</a>
-          </div>
-
-          <div class="blog-entry__img img-placeholder">
-            <!-- <img src="img/blog-entry-home.jpg" alt="Blog entry"> -->
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ── 7. ABOUT PREVIEW ──────────────────────────────── -->
-    <section class="section about-preview">
-      <div class="container">
-        <div class="about-preview__grid">
-
-          <div class="about-preview__logo">
+        <div class="home-about__grid">
+          <div class="home-about__logo">
             <img src="logos/SAID-YES-LOGO01.png" alt="Said Yes Magazine">
           </div>
-
-          <div class="about-preview__text">
+          <div class="home-about__content">
+            <p class="home-about__eyebrow">About us</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           </div>
-
         </div>
       </div>
     </section>
 
-
-    <!-- ── 7. CONTACT FORM ───────────────────────────────── -->
-    <section class="section section--blush contact-section">
-      <div class="container">
-        <div class="contact-grid">
-
-          <div class="contact-lead">
-            <p class="lead-top">We wanna hear from</p>
-            <span class="contact-lead__you">you</span>
-            <p class="lead-sub">Fill the form and let us know<br>What topics interest you</p>
+    <section class="section contact-section">
+      <div class="contact-section__split">
+        <div class="contact-section__media">
+          <div class="container contact-section__media-inner">
+            <div class="contact-visual">
+              <img src="img/01 HOME/IMG-9.jpg" alt="Wedding rings and invitation">
+            </div>
           </div>
+        </div>
 
-          <form class="contact-form" novalidate>
-            <div class="form-group">
-              <input type="text" class="form-input" placeholder="Name" aria-label="Name">
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-input" placeholder="email address" aria-label="Email address">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-input" placeholder="I want to know about..." aria-label="Topics of interest">
-            </div>
-            <button type="submit" class="btn btn-primary">Send request</button>
-          </form>
-
+        <div class="contact-section__form-side">
+          <div class="container contact-section__form-inner">
+            <form class="contact-form" novalidate>
+              <p class="contact-form__title">We want to hear from <span class="contact-form__accent">you</span></p>
+              <p class="contact-form__intro">Fill the form and let us know<br>What topics interest you</p>
+              <div class="contact-form__group">
+                <label class="contact-form__label" for="home-name">Name</label>
+                <input id="home-name" type="text" class="contact-form__input" placeholder="enter your name" aria-label="Name">
+              </div>
+              <div class="contact-form__group">
+                <label class="contact-form__label" for="home-email">email adress</label>
+                <input id="home-email" type="email" class="contact-form__input" placeholder="enter your email" aria-label="Email address">
+              </div>
+              <div class="contact-form__group">
+                <label class="contact-form__label" for="home-topic">I want to know about...</label>
+                <input id="home-topic" type="text" class="contact-form__input" placeholder="enter your topic" aria-label="Topics of interest">
+              </div>
+              <button type="submit" class="contact-form__submit">Send request</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
-
   </main>
 
-
-  <!-- =====================================================
-       FOOTER
-       ===================================================== -->
   <footer class="site-footer" aria-label="Site footer">
     <div class="container">
       <div class="footer-inner">
-
         <div class="footer-left">
           <ul class="footer-links" role="list">
             <li><a href="index.html">Home</a></li>
@@ -303,41 +218,42 @@
             <li><a href="#">Get inspired</a></li>
             <li><a href="#">Contact us</a></li>
           </ul>
+        </div>
 
+        <div class="footer-right">
           <div class="footer-follow">
-            <span class="follow-label">Follow Us</span>
-            <a href="#" class="follow-handle" target="_blank" rel="noopener">@SaidYes</a>
-            <span class="follow-podcast">Listen to our podcast</span>
-            <div class="footer-social-icons" role="list">
-              <a href="#" aria-label="Instagram" target="_blank" rel="noopener" role="listitem">
-                <img src="SVG-say-yes/SVG/instagram-svgrepo-com.svg" alt="" width="20" height="20" aria-hidden="true">
+            <p class="footer-follow__title">Follow Us</p>
+            <a href="#" class="footer-follow__handle" target="_blank" rel="noopener">
+              <img src="img/SVG/instagram-svgrepo-com.svg" alt="" width="24" height="24" aria-hidden="true">
+              <span>@saidyes</span>
+            </a>
+          </div>
+
+          <div class="footer-podcast">
+            <p class="footer-podcast__title">Listen to our podcast</p>
+            <div class="footer-podcast__icons">
+              <a href="#" aria-label="Apple Podcasts" target="_blank" rel="noopener">
+                <img src="img/SVG/applepodcasts.svg" alt="" width="28" height="28" aria-hidden="true">
               </a>
-              <a href="#" aria-label="TikTok" target="_blank" rel="noopener" role="listitem">
-                <img src="SVG-say-yes/SVG/tik-tok-svgrepo-com.svg" alt="" width="20" height="20" aria-hidden="true">
+              <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
+                <img src="img/SVG/instagram-svgrepo-com.svg" alt="" width="28" height="28" aria-hidden="true">
               </a>
-              <a href="#" aria-label="YouTube" target="_blank" rel="noopener" role="listitem">
-                <img src="SVG-say-yes/SVG/youtube-svgrepo-com.svg" alt="" width="20" height="20" aria-hidden="true">
-              </a>
-              <a href="#" aria-label="Apple Podcasts" target="_blank" rel="noopener" role="listitem">
-                <img src="SVG-say-yes/SVG/applepodcasts.svg" alt="" width="20" height="20" aria-hidden="true">
+              <a href="#" aria-label="YouTube" target="_blank" rel="noopener">
+                <img src="img/SVG/youtube-svgrepo-com.svg" alt="" width="28" height="28" aria-hidden="true">
               </a>
             </div>
           </div>
         </div>
-
-        <div class="footer-right">
-          <img src="logos/SAID-YES-LOGO01.png" alt="Said Yes Magazine" class="footer-logo" loading="lazy">
-        </div>
-
       </div>
     </div>
 
     <div class="footer-bottom">
       <div class="container">
-        <p>Copyright &copy; <span id="footer-year"></span> Said Yes Magazine</p>
+        <p>Copyright 2026 - Said Yes Magazine</p>
         <nav class="footer-bottom-links" aria-label="Footer legal links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
+          <a href="#">Terms &amp; conditions</a>
+          <span class="footer-bottom-separator" aria-hidden="true">•</span>
+          <a href="#">Privacy policy</a>
         </nav>
       </div>
     </div>
