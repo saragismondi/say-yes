@@ -57,4 +57,27 @@
     yearEl.textContent = new Date().getFullYear();
   }
 
+  /* ----------------------------------------------------------
+     PODCAST SEARCH
+     ---------------------------------------------------------- */
+  const episodesSearchInput = document.querySelector('.episodes-search__input');
+  const episodeRows = Array.from(document.querySelectorAll('.episode-row'));
+
+  if (episodesSearchInput && episodeRows.length) {
+    const filterEpisodes = () => {
+      const query = episodesSearchInput.value.trim().toLowerCase();
+
+      episodeRows.forEach(row => {
+        const haystack = (row.dataset.episodeSearch || row.textContent || '').toLowerCase();
+        const matches = query === '' || haystack.includes(query);
+        row.style.display = matches ? '' : 'none';
+      });
+    };
+
+    episodesSearchInput.addEventListener('input', filterEpisodes);
+    episodesSearchInput.addEventListener('search', filterEpisodes);
+    episodesSearchInput.addEventListener('keyup', filterEpisodes);
+    filterEpisodes();
+  }
+
 })();

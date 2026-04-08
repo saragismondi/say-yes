@@ -7,37 +7,50 @@
   <title>Marriage — Said Yes Magazine</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="marriage-page">
 
   <!-- =====================================================
        HEADER
        ===================================================== -->
   <header class="site-header">
-
     <div class="header-topbar">
       <div class="container">
-        <a href="index.html" class="header-logo" aria-label="Said Yes Magazine — Home">
-          <img src="logos/YES01.png" alt="Said Yes Magazine">
+        <a href="index.html" class="header-logo" aria-label="Said Yes Magazine home">
+          <img src="logos/SAID-YES-LOGO_CLEAR.png" alt="Said Yes Magazine">
         </a>
         <div class="header-social">
           <span class="social-label">Follow Us</span>
-          <span class="divider">|</span>
-          <a href="#" class="social-handle" target="_blank" rel="noopener">@SaidYes</a>
           <a href="#" class="social-icon-link" aria-label="Instagram" target="_blank" rel="noopener">
-            <img src="SVG-say-yes/SVG/instagram-svgrepo-com.svg" alt="" width="17" height="17" aria-hidden="true">
+            <img src="img/SVG/instagram-svgrepo-com.svg" alt="" width="18" height="18" aria-hidden="true">
           </a>
+          <a href="#" class="social-handle" target="_blank" rel="noopener">@saidyes</a>
         </div>
       </div>
     </div>
+  </header>
 
-    <nav class="site-nav" aria-label="Main navigation">
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="page-hero marriage-page-hero" aria-label="Marriage & Relationships hero">
+      <div class="page-hero__bg">
+        <img src="img/04 MARRIAGE/MARRIAGE-HERO.jpg" alt="Wedding couple">
+      </div>
+      <div class="page-hero__overlay">
+        <div class="container">
+          <h1 class="page-hero__title">Marriage &amp;<br>Relationships</h1>
+        </div>
+      </div>
+    </section>
+
+    <nav class="home-hero-nav" aria-label="Main navigation">
       <div class="container">
         <ul class="nav-list" id="nav-list" role="list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Planning &amp; Inspiration</a></li>
+          <li><a href="planning.html">Planning &amp; Inspiration</a></li>
           <li><a href="podcast.html">Podcast</a></li>
-          <li><a href="marriage.html">Marriage</a></li>
-          <li><a href="about.html">About Us</a></li>
+          <li><a href="marriage.html" class="active">Marriage</a></li>
+          <li><a href="about.html">About us</a></li>
         </ul>
         <button class="nav-toggle" id="nav-toggle"
                 aria-label="Toggle navigation" aria-expanded="false"
@@ -49,71 +62,30 @@
       </div>
     </nav>
 
-  </header>
-
-
-  <!-- =====================================================
-       MAIN CONTENT
-       ===================================================== -->
-  <main id="main-content">
-
-    <!-- ── 1. HERO ──────────────────────────────────────── -->
-    <section class="page-hero" aria-label="Marriage hero">
-
-      <div class="page-hero__bg">
-        <img src="img/04 MARRIAGE/MARRIAGE-HERO.jpg" alt="Wedding couple">
-      </div>
-
-      <div class="page-hero__overlay">
-        <div class="container">
-          <h1 class="page-hero__title">Marriage &amp;<br>Relationships</h1>
-        </div>
-      </div>
-
-    </section>
-
-
-    <!-- ── 2. INTRO HEADLINE ─────────────────────────────── -->
-    <section class="section marriage-intro">
+    <section class="section blog-intro">
       <div class="container">
-        <h2>A <em>couple's life</em> to dream for...</h2>
+        <p class="blog-intro__title">A <span class="blog-intro__accent">couple's life</span> to dream for...</p>
       </div>
     </section>
 
-
-    <!-- ── 3. FEATURED ARTICLE + 3 CARDS ────────────────── -->
-    <section class="section marriage-featured">
+    <section class="section marriage-featured" aria-label="Featured marriage story">
       <div class="container">
-
-        <!-- Main featured article -->
         <article class="marriage-featured__article">
-          <p class="marriage-featured__label">Life After "I Do":</p>
+          <p class="marriage-featured__label">Life After “I do”:</p>
           <h2 class="marriage-featured__title">5 Essential Tips for New Arrivals in Marriage</h2>
-
           <div class="marriage-featured__img">
-            <img src="img/04 MARRIAGE/MARRIAGE-SAIDYES3.jpg" alt="Newlywed couple">
+            <img src="img/04 MARRIAGE/IMG-03.jpg" alt="Newlywed couple">
           </div>
-
-          <p class="marriage-featured__excerpt">The vow has been sworn, the flowers are still magnificent, and the honeymoon glow is settling into a Tuesday morning routine. Transitioning from wedding planning to marriage is setting into a Tuesday morning routine. Transitioning from newlywed to married couple means the transition is now present when you didn't before.</p>
-          <p class="marriage-featured__excerpt">Here are five tips to help you navigate your first year as a team.</p>
+          <p class="marriage-featured__excerpt">The vows are signed, the flowers are still blooming, and now reality is showing up with full calendars and new responsibilities. Transitioning from wedding planning to married life means learning how to lean on each other differently.</p>
+          <p class="marriage-featured__excerpt">Here are five tips to help you build rituals, keep communication open, and keep the spark alive through every stage.</p>
           <a href="#" class="read-more">Read more →</a>
         </article>
+      </div>
+    </section>
 
-        <!-- 3 secondary articles -->
+    <section class="section marriage-articles" aria-label="Marriage articles">
+      <div class="container">
         <div class="marriage-articles-row">
-
-          <article class="card">
-            <div class="card-img">
-              <img src="img/04 MARRIAGE/IMG-03.jpg" alt="Managing money as a couple">
-            </div>
-            <div class="card-body">
-              <p class="eyebrow">Finance</p>
-              <p class="card-label">Managing Money as a Couple</p>
-              <p class="card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
-              <a href="#" class="read-more">Read more →</a>
-            </div>
-          </article>
-
           <article class="card">
             <div class="card-img">
               <img src="img/04 MARRIAGE/IMG-07.jpg" alt="Understanding each other better">
@@ -121,109 +93,101 @@
             <div class="card-body">
               <p class="eyebrow">Psychology</p>
               <p class="card-label">Understanding Each Other Better</p>
-              <p class="card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
+              <p class="card-excerpt">Create space to ask the hard questions, listen deeply, and turn curiosity into comfort.</p>
               <a href="#" class="read-more">Read more →</a>
             </div>
           </article>
-
           <article class="card">
             <div class="card-img">
-              <img src="img/IMG-RANDOM/IMG-01.jpg" alt="Couples counseling">
+              <img src="img/04 MARRIAGE/IMG-03.jpg" alt="Managing money as a couple">
+            </div>
+            <div class="card-body">
+              <p class="eyebrow">Finance</p>
+              <p class="card-label">Managing Money as a Couple</p>
+              <p class="card-excerpt">Simple boundaries around spending can transform money conversations into teamwork.</p>
+              <a href="#" class="read-more">Read more →</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img">
+              <img src="img/IMG-RANDOM/IMG-05.jpg" alt="Couples counseling">
             </div>
             <div class="card-body">
               <p class="eyebrow">Therapy</p>
               <p class="card-label">When to Seek Couples Counseling</p>
-              <p class="card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
+              <p class="card-excerpt">As the years layer on, fresh perspectives can help you reset and reconnect.</p>
               <a href="#" class="read-more">Read more →</a>
             </div>
           </article>
-
         </div>
       </div>
     </section>
 
-
-    <!-- ── 4. KEEP THE LOVE ALIVE ────────────────────────── -->
     <section class="love-alive" aria-label="Keep the love alive">
-
       <div class="love-alive__img">
-        <img src="img/04 MARRIAGE/LOVE-BANNER.jpg" alt="Couple on a road">
+        <img src="img/04 MARRIAGE/LOVE-BANNER.jpg" alt="Couple holding hands at sunset">
       </div>
-
-      <div class="love-alive__text">
-        <h2>Keep the<br>love alive</h2>
-        <p>Ideas to make everyday special</p>
-      </div>
-
+  
     </section>
 
-
-    <!-- ── 5. DATE IDEAS ─────────────────────────────────── -->
-    <section class="section date-ideas">
+    <section class="section date-ideas" aria-label="Date ideas">
       <div class="container">
-
-        <div class="date-ideas__heading">
-          <h3>3 Creative Date Ideas:</h3>
-          <p>Let's keep the Spark Alive</p>
-        </div>
-
         <div class="date-ideas__grid">
 
-          <!-- Main date idea -->
-          <article class="card">
-            <div class="card-img">
-              <img src="img/IMG-RANDOM/IMG-02.jpg" alt="Creative date idea">
+          <div class="date-ideas__left">
+            <div class="date-ideas__heading">
+              <h3>3 Creative Date Ideas:</h3>
+              <p>Let's keep the Spark Alive</p>
             </div>
-            <div class="card-body">
-              <p class="eyebrow">Date Idea 01</p>
-              <p class="card-label">Subtitle</p>
-              <p class="card-excerpt">Sharing the same "I want a 'movie' mindset is one of the best ways to keep your connection vibrant. Trying new things together triggers the release of dopamine, the feel-good chemical that makes your partner feel exciting and new.</p>
-              <a href="#" class="read-more">Read more →</a>
-            </div>
-          </article>
-
-          <!-- Side articles -->
-          <div class="date-ideas__side">
-
-            <article class="featured-side-card">
-              <div class="featured-side-card__img">
-                <img src="img/IMG-RANDOM/IMG-05.jpg" alt="Self-care as a couple">
+            <article class="card date-ideas__main">
+              <div class="card-img">
+                <img src="img/04 MARRIAGE/IMG-07.jpg" alt="Creative date idea">
               </div>
               <div class="card-body">
-                <p class="eyebrow">Wellness</p>
-                <p class="card-label">Self-Care as a Couple</p>
-                <p class="card-excerpt">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
-                <a href="#" class="read-more">Read more →</a>
+                <p class="card-excerpt">Moving past the "dinner and a movie" routine is the best way to keep your connection vibrant. Trying new things together triggers the release of dopamine, the same "feel-good" chemical that was present when you first started dating.</p>
+                <a href="#" class="read-more">Read more +</a>
               </div>
             </article>
-
-            <article class="featured-side-card">
-              <div class="featured-side-card__img img-placeholder">
-                <!-- image coming soon -->
-              </div>
-              <div class="card-body">
-                <p class="eyebrow">Communication</p>
-                <p class="card-label">Having the Hard Conversations</p>
-                <p class="card-excerpt">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
-                <a href="#" class="read-more">Read more →</a>
-              </div>
-            </article>
-
           </div>
+
+          <div class="date-ideas__side">
+            <article class="card date-ideas__side-card">
+              <div class="date-ideas__side-header">
+                <p class="eyebrow">Article 02</p>
+                <p class="card-label">Subtitle</p>
+              </div>
+              <div class="card-img">
+                <img src="img/IMG-RANDOM/IMG-02.jpg" alt="Article 02">
+              </div>
+              <div class="card-body">
+                <p class="card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="read-more">Read more +</a>
+              </div>
+            </article>
+            <article class="card date-ideas__side-card">
+              <div class="date-ideas__side-header">
+                <p class="eyebrow">Article 04</p>
+                <p class="card-label">Subtitle</p>
+              </div>
+              <div class="card-img">
+                <img src="img/IMG-RANDOM/IMG-05.jpg" alt="Article 04">
+              </div>
+              <div class="card-body">
+                <p class="card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="read-more">Read more +</a>
+              </div>
+            </article>
+          </div>
+
         </div>
       </div>
     </section>
 
   </main>
 
-
-  <!-- =====================================================
-       FOOTER
-       ===================================================== -->
   <footer class="site-footer" aria-label="Site footer">
     <div class="container">
       <div class="footer-inner">
-
         <div class="footer-left">
           <ul class="footer-links" role="list">
             <li><a href="index.html">Home</a></li>
@@ -231,41 +195,42 @@
             <li><a href="#">Get inspired</a></li>
             <li><a href="#">Contact us</a></li>
           </ul>
+        </div>
 
+        <div class="footer-right">
           <div class="footer-follow">
-            <span class="follow-label">Follow Us</span>
-            <a href="#" class="follow-handle" target="_blank" rel="noopener">@SaidYes</a>
-            <span class="follow-podcast">Listen to our podcast</span>
-            <div class="footer-social-icons" role="list">
-              <a href="#" aria-label="Instagram" target="_blank" rel="noopener" role="listitem">
-                <img src="SVG-say-yes/SVG/instagram-svgrepo-com.svg" alt="" width="20" height="20" aria-hidden="true">
+            <p class="footer-follow__title">Follow Us</p>
+            <a href="#" class="footer-follow__handle" target="_blank" rel="noopener">
+              <img src="img/SVG/instagram-svgrepo-com.svg" alt="" width="24" height="24" aria-hidden="true">
+              <span>@saidyes</span>
+            </a>
+          </div>
+
+          <div class="footer-podcast">
+            <p class="footer-podcast__title">Listen to our podcast</p>
+            <div class="footer-podcast__icons">
+              <a href="#" aria-label="Apple Podcasts" target="_blank" rel="noopener">
+                <img src="img/SVG/applepodcasts.svg" alt="" width="28" height="28" aria-hidden="true">
               </a>
-              <a href="#" aria-label="TikTok" target="_blank" rel="noopener" role="listitem">
-                <img src="SVG-say-yes/SVG/tik-tok-svgrepo-com.svg" alt="" width="20" height="20" aria-hidden="true">
+              <a href="#" aria-label="Spotify" target="_blank" rel="noopener">
+                <img src="img/SVG/spotify.svg" alt="" width="28" height="28" aria-hidden="true">
               </a>
-              <a href="#" aria-label="YouTube" target="_blank" rel="noopener" role="listitem">
-                <img src="SVG-say-yes/SVG/youtube-svgrepo-com.svg" alt="" width="20" height="20" aria-hidden="true">
-              </a>
-              <a href="#" aria-label="Apple Podcasts" target="_blank" rel="noopener" role="listitem">
-                <img src="SVG-say-yes/SVG/applepodcasts.svg" alt="" width="20" height="20" aria-hidden="true">
+              <a href="#" aria-label="YouTube" target="_blank" rel="noopener">
+                <img src="img/SVG/youtube-svgrepo-com.svg" alt="" width="28" height="28" aria-hidden="true">
               </a>
             </div>
           </div>
         </div>
-
-        <div class="footer-right">
-          <img src="logos/SAID-YES-LOGO01.png" alt="Said Yes Magazine" class="footer-logo" loading="lazy">
-        </div>
-
       </div>
     </div>
 
     <div class="footer-bottom">
       <div class="container">
-        <p>Copyright &copy; <span id="footer-year"></span> Said Yes Magazine</p>
+        <p>Copyright <span id="footer-year"></span> - Said Yes Magazine</p>
         <nav class="footer-bottom-links" aria-label="Footer legal links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
+          <a href="#">Terms &amp; conditions</a>
+          <span class="footer-bottom-separator" aria-hidden="true">•</span>
+          <a href="#">Privacy policy</a>
         </nav>
       </div>
     </div>

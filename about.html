@@ -3,45 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About Said Yes Magazine — More than a magazine. Meet our team.">
-  <title>About Us — Said Yes Magazine</title>
+  <meta name="description" content="About Said Yes Magazine - More than a magazine. Meet our team.">
+  <title>About Us - Said Yes Magazine</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-
-  <!-- =====================================================
-       HEADER
-       ===================================================== -->
+<body class="about-page">
   <header class="site-header">
-
     <div class="header-topbar">
       <div class="container">
-        <a href="index.html" class="header-logo" aria-label="Said Yes Magazine — Home">
-          <img src="logos/YES01.png" alt="Said Yes Magazine">
+        <a href="index.html" class="header-logo" aria-label="Said Yes Magazine home">
+          <img src="logos/SAID-YES-LOGO_CLEAR.png" alt="Said Yes Magazine">
         </a>
         <div class="header-social">
           <span class="social-label">Follow Us</span>
-          <span class="divider">|</span>
-          <a href="#" class="social-handle" target="_blank" rel="noopener">@SaidYes</a>
           <a href="#" class="social-icon-link" aria-label="Instagram" target="_blank" rel="noopener">
-            <img src="SVG-say-yes/SVG/instagram-svgrepo-com.svg" alt="" width="17" height="17" aria-hidden="true">
+            <img src="img/SVG/instagram-svgrepo-com.svg" alt="" width="18" height="18" aria-hidden="true">
           </a>
+          <a href="#" class="social-handle" target="_blank" rel="noopener">@saidyes</a>
         </div>
       </div>
     </div>
+  </header>
 
-    <nav class="site-nav" aria-label="Main navigation">
+  <main id="main-content" class="about-main">
+    <section class="page-hero about-hero" aria-label="About us hero">
+      <div class="page-hero__bg">
+        <img src="img/05 ABOUT US/ABOUTUS-HERO.jpg" alt="Behind the scenes of Said Yes Magazine">
+      </div>
+      <div class="page-hero__overlay about-hero__overlay">
+        <div class="container about-hero__inner">
+          <h1 class="page-hero__title about-hero__title">Get to<br>know us</h1>
+        </div>
+      </div>
+    </section>
+
+    <nav class="site-nav home-hero-nav" aria-label="Main navigation">
       <div class="container">
         <ul class="nav-list" id="nav-list" role="list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Planning &amp; Inspiration</a></li>
+          <li><a href="planning.html">Planning &amp; Inspiration</a></li>
           <li><a href="podcast.html">Podcast</a></li>
           <li><a href="marriage.html">Marriage</a></li>
-          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html" class="active">About us</a></li>
         </ul>
-        <button class="nav-toggle" id="nav-toggle"
-                aria-label="Toggle navigation" aria-expanded="false"
-                aria-controls="nav-list">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-list">
           <span></span>
           <span></span>
           <span></span>
@@ -49,217 +54,162 @@
       </div>
     </nav>
 
-  </header>
-
-
-  <!-- =====================================================
-       MAIN CONTENT
-       ===================================================== -->
-  <main id="main-content">
-
-    <!-- ── 1. HERO ──────────────────────────────────────── -->
-    <section class="page-hero" aria-label="About Us hero">
-
-      <div class="page-hero__bg">
-        <img src="img/05 ABOUT US/ABOUTUS-HERO.jpg" alt="About Said Yes Magazine">
-      </div>
-
-      <div class="page-hero__overlay">
-        <div class="container">
-          <h1 class="page-hero__title">About Us</h1>
+    <section class="section about-story">
+      <div class="container about-story__container">
+        <div class="about-story__logo-wrap">
+          <img src="logos/SAID-YES-LOGO01.png" alt="Said Yes Magazine" class="about-story__logo">
         </div>
-      </div>
 
-    </section>
-
-
-    <!-- ── 2. MORE THAN A MAGAZINE ───────────────────────── -->
-    <section class="section magazine-info">
-      <div class="container">
-        <div class="magazine-info__grid">
-
-          <div class="magazine-info__logo">
-            <img src="logos/SAID-YES-LOGO01.png" alt="Said Yes Magazine">
-          </div>
-
-          <div class="magazine-info__content">
-            <h2>More than a magazine</h2>
-            <div class="magazine-info__text">
-              <p>Said Yes Magazine was born from a simple but beautiful observation: Most wedding venues today look beautiful, but often lack any emotional connection. The vision is to build a purpose-driven wedding magazine that goes beyond tradition, in a way that feels personal and meaningful to all.</p>
-              <p>Rather than following a traditional magazine format, Said Yes Magazine is committed to a living platform, with continuous content around advice about love, how to plan your proposal, tips on marriage and more.</p>
-              <p>At its core, the brand is centered on one core topic: The joy of perfect weddings, but honest experiences, thoughtful decisions, and the moments that people can't stop talking about. Every story we publish is told in a way that feels genuine and real — not curated or artificial.</p>
-              <p>Said Yes Magazine also aims to empower couples to make informed, positive and empowering decisions. From planning and design concepts, the magazine also wants to talk about relationships, intimacy, and marriage. We're proud to be a trusted and recognized voice in the wedding space and community.</p>
-              <p>The tone of the brand is warm, cultural, and intentionally. Authoritative, historical, cultural, and, most importantly, human.</p>
-              <p>At the heart of every issue is a collection of storytelling, craftsmanship, and creative vision. The Magazine is set to become a trusted and recognized name in the wedding space. Read these stories and feel the spirit of the brand in every word of weddings we cover.</p>
-            </div>
-          </div>
-
+        <div class="about-story__content">
+          <p class="about-story__title">More than a magazine</p>
+          <p class="about-story__text"><span class="about-story__highlight">Said Yes Magazine</span> is born from a simple but honest observation. Today, much of wedding content looks impeccable, but it often lacks a true emotional connection. Everything is carefully curated, but it does not always convey what it really means.</p>
+          <p class="about-story__text">We are a modern wedding magazine that goes beyond the visual. A platform where weddings are not only seen, but felt. Where stories carry the same weight as aesthetics.</p>
+          <p class="about-story__text">More than following a traditional editorial model, Said Yes Magazine is conceived as a living platform, with continuous content that combines editorial, short-form video, and podcast, all under one vision.</p>
+          <p class="about-story__text">At its core, the brand is centered on real stories. Not only perfect weddings, but honest experiences, important decisions, and those moments that almost no one talks about.</p>
+          <p class="about-story__text about-story__text--closing">Said Yes Magazine is also a positive and intentional space. Weddings represent commitment, values, and, for many people, a deep connection with <span class="about-story__highlight">faith</span>.</p>
         </div>
       </div>
     </section>
 
-
-    <!-- ── 3. MEET THE TEAM ──────────────────────────────── -->
-    <section class="section section--blush team-section">
+    <section class="section about-team">
       <div class="container">
+        <div class="about-team__heading-row">
+          <span class="about-team__line" aria-hidden="true"></span>
+          <p class="about-team__title">Meet our team</p>
+          <span class="about-team__line" aria-hidden="true"></span>
+        </div>
+        <p class="about-team__intro">At the heart of every issue is a collective of storytellers, perfectionists, and creative rebels. Our team is a diverse blend of editorial precision and visual flair, dedicated to capturing the pulse of culture and bringing it straight to your hands. We do not just report on trends, we live them, curate them, and challenge them.</p>
 
-        <h2 class="team-section__heading">Meet our team</h2>
+        <div class="about-team__grid">
+          <article class="about-team-card">
+            <p class="about-team-card__role">CEO</p>
+            <p class="about-team-card__name">Raul Quero</p>
+            <div class="about-team-card__image-wrap">
+              <img src="img/05 ABOUT US/IMG-08.jpg" alt="Raul Quero" class="about-team-card__image">
+            </div>
+            <p class="about-team-card__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </article>
 
-        <div class="team-grid">
+          <article class="about-team-card">
+            <p class="about-team-card__role">CFO</p>
+            <p class="about-team-card__name">Name</p>
+            <div class="about-team-card__image-wrap">
+              <img src="img/05 ABOUT US/P1.jpg" alt="CFO portrait" class="about-team-card__image">
+            </div>
+            <p class="about-team-card__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </article>
 
-          <!-- Row 1 -->
-          <div class="team-card">
-            <div class="team-card__img">
-              <img src="img/05 ABOUT US/IMG-08.jpg" alt="Raul Quinn">
+          <article class="about-team-card">
+            <p class="about-team-card__role">Project Manager</p>
+            <p class="about-team-card__name">Name</p>
+            <div class="about-team-card__image-wrap">
+              <img src="img/05 ABOUT US/P2.jpg" alt="Project manager portrait" class="about-team-card__image">
             </div>
-            <div class="team-card__info">
-              <p class="team-card__role">CEO</p>
-              <h4 class="team-card__name">Raul Quinn</h4>
-              <p class="team-card__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris.</p>
-            </div>
-          </div>
+            <p class="about-team-card__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </article>
 
-          <div class="team-card">
-            <div class="team-card__img">
-              <img src="img/05 ABOUT US/P1.jpg" alt="CFO Name">
+          <article class="about-team-card">
+            <p class="about-team-card__role">Position</p>
+            <p class="about-team-card__name">Name</p>
+            <div class="about-team-card__image-wrap">
+              <img src="img/05 ABOUT US/IMG-08.jpg" alt="Team member portrait" class="about-team-card__image">
             </div>
-            <div class="team-card__info">
-              <p class="team-card__role">CFO</p>
-              <h4 class="team-card__name">Name</h4>
-              <p class="team-card__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris.</p>
-            </div>
-          </div>
+            <p class="about-team-card__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </article>
 
-          <div class="team-card">
-            <div class="team-card__img">
-              <img src="img/05 ABOUT US/P2.jpg" alt="Project Manager Name">
+          <article class="about-team-card">
+            <p class="about-team-card__role">Position</p>
+            <p class="about-team-card__name">Name</p>
+            <div class="about-team-card__image-wrap">
+              <img src="img/05 ABOUT US/P1.jpg" alt="Team member portrait" class="about-team-card__image">
             </div>
-            <div class="team-card__info">
-              <p class="team-card__role">Project Manager</p>
-              <h4 class="team-card__name">Name</h4>
-              <p class="team-card__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris.</p>
-            </div>
-          </div>
+            <p class="about-team-card__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </article>
 
-          <!-- Row 2 -->
-          <div class="team-card">
-            <div class="team-card__img">
-              <img src="img/05 ABOUT US/P3.jpg" alt="Position Name">
+          <article class="about-team-card">
+            <p class="about-team-card__role">Position</p>
+            <p class="about-team-card__name">Name</p>
+            <div class="about-team-card__image-wrap">
+              <img src="img/05 ABOUT US/P2.jpg" alt="Team member portrait" class="about-team-card__image">
             </div>
-            <div class="team-card__info">
-              <p class="team-card__role">Position</p>
-              <h4 class="team-card__name">Name</h4>
-              <p class="team-card__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris.</p>
-            </div>
-          </div>
-
-          <div class="team-card">
-            <div class="team-card__img img-placeholder">
-              <!-- <img src="img/team-05.jpg" alt="Position Name"> -->
-            </div>
-            <div class="team-card__info">
-              <p class="team-card__role">Position</p>
-              <h4 class="team-card__name">Name</h4>
-              <p class="team-card__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris.</p>
-            </div>
-          </div>
-
-          <div class="team-card">
-            <div class="team-card__img img-placeholder">
-              <!-- <img src="img/team-06.jpg" alt="Position Name"> -->
-            </div>
-            <div class="team-card__info">
-              <p class="team-card__role">Position</p>
-              <h4 class="team-card__name">Name</h4>
-              <p class="team-card__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris.</p>
-            </div>
-          </div>
-
+            <p class="about-team-card__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </article>
         </div>
       </div>
     </section>
 
-
-    <!-- ── 4. CONTACT BAR ────────────────────────────────── -->
-    <section class="contact-bar" aria-label="Follow us and contact">
-      <div class="container">
-        <div class="contact-bar__inner">
-
-          <div class="contact-bar__social">
-            <strong>Follow us:</strong>
-            <div class="contact-bar__icons">
-              <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
-                <img src="SVG-say-yes/SVG/instagram-svgrepo-com.svg" alt="" width="20" height="20" aria-hidden="true">
-              </a>
-              <a href="#" aria-label="TikTok" target="_blank" rel="noopener">
-                <img src="SVG-say-yes/SVG/tik-tok-svgrepo-com.svg" alt="" width="20" height="20" aria-hidden="true">
-              </a>
-              <a href="#" aria-label="X / Twitter" target="_blank" rel="noopener">
-                <img src="SVG-say-yes/SVG/X_logo_2023_original.svg" alt="" width="20" height="20" aria-hidden="true">
-              </a>
-              <a href="#" aria-label="YouTube" target="_blank" rel="noopener">
-                <img src="SVG-say-yes/SVG/youtube-svgrepo-com.svg" alt="" width="20" height="20" aria-hidden="true">
-              </a>
-              <a href="#" aria-label="Apple Podcasts" target="_blank" rel="noopener">
-                <img src="SVG-say-yes/SVG/applepodcasts.svg" alt="" width="20" height="20" aria-hidden="true">
-              </a>
-            </div>
-          </div>
-
-          <div class="contact-bar__info">
-            <a href="mailto:contact@saidyes.com">
-              <img src="SVG-say-yes/SVG/email-svgrepo-com.svg" alt="" aria-hidden="true">
-              contact@saidyes.com
+    <section class="about-contact-strip" aria-label="Follow us and contact">
+      <div class="container about-contact-strip__container">
+        <div class="about-contact-strip__row">
+          <p class="about-contact-strip__label">Follow us:</p>
+          <div class="about-contact-strip__icons">
+            <a href="#" aria-label="Instagram" target="_blank" rel="noopener" class="about-contact-strip__icon-link">
+              <img src="img/SVG/instagram-svgrepo-com.svg" alt="" width="28" height="28" aria-hidden="true">
             </a>
-            <a href="https://wa.me/10123456789" target="_blank" rel="noopener">
-              <img src="SVG-say-yes/SVG/whatsapp-svgrepo-com.svg" alt="" aria-hidden="true">
-              +01 234.5678
+            <a href="#" aria-label="TikTok" target="_blank" rel="noopener" class="about-contact-strip__icon-link">
+              <img src="img/SVG/tik-tok-svgrepo-com.svg" alt="" width="28" height="28" aria-hidden="true">
+            </a>
+            <a href="#" aria-label="X" target="_blank" rel="noopener" class="about-contact-strip__icon-link">
+              <img src="img/SVG/X_logo_2023_original.svg" alt="" width="28" height="28" aria-hidden="true">
+            </a>
+            <a href="#" aria-label="YouTube" target="_blank" rel="noopener" class="about-contact-strip__icon-link">
+              <img src="img/SVG/youtube-svgrepo-com.svg" alt="" width="28" height="28" aria-hidden="true">
             </a>
           </div>
+        </div>
 
+        <div class="about-contact-strip__row about-contact-strip__row--contact">
+          <p class="about-contact-strip__label">Our contact:</p>
+          <a href="mailto:info@saidyesmagazine.com" class="about-contact-strip__contact-link">
+            <img src="img/SVG/email-svgrepo-com.svg" alt="" width="28" height="28" aria-hidden="true">
+            <span>info@saidyesmagazine.com</span>
+          </a>
+          <a href="https://wa.me/012345678" class="about-contact-strip__contact-link" target="_blank" rel="noopener">
+            <img src="img/SVG/whatsapp-svgrepo-com.svg" alt="" width="28" height="28" aria-hidden="true">
+            <span>(01) 234.5678</span>
+          </a>
         </div>
       </div>
     </section>
 
-
-    <!-- ── 5. GET IN TOUCH ───────────────────────────────── -->
-    <section class="section section--blush get-in-touch">
-      <div class="container">
-        <div class="git-grid">
-
-          <div class="git-lead">
-            <p class="git-eyebrow">Get in touch</p>
-            <h2>
-              Be a part of<br>
-              the that<br>
-              <span class="display">SaidYes!</span>
-            </h2>
+    <section class="section contact-section about-contact-section">
+      <div class="contact-section__split">
+        <div class="contact-section__media">
+          <div class="container contact-section__media-inner">
+            <div class="contact-visual">
+              <img src="img/05 ABOUT US/IMG-08.jpg" alt="Working on Said Yes Magazine">
+            </div>
           </div>
+        </div>
 
-          <form class="git-form" novalidate>
-            <div class="form-group">
-              <input type="email" class="form-input" placeholder="Email address" aria-label="Email address">
-            </div>
-            <div class="form-group">
-              <input type="tel" class="form-input" placeholder="Phone" aria-label="Phone number">
-            </div>
-            <button type="submit" class="btn btn-primary">Send</button>
-          </form>
-
+        <div class="contact-section__form-side">
+          <div class="container contact-section__form-inner">
+            <form class="contact-form" novalidate>
+              <p class="contact-form__title">Get in touch</p>
+              <p class="contact-form__intro">Be a part of the people that<br>SaidYes!</p>
+              <div class="contact-form__group">
+                <label class="contact-form__label" for="about-name">Name</label>
+                <input id="about-name" type="text" class="contact-form__input" placeholder="enter your name">
+              </div>
+              <div class="contact-form__group">
+                <label class="contact-form__label" for="about-email">Email address</label>
+                <input id="about-email" type="email" class="contact-form__input" placeholder="enter your email">
+              </div>
+              <div class="contact-form__group">
+                <label class="contact-form__label" for="about-phone">Phone</label>
+                <input id="about-phone" type="tel" class="contact-form__input" placeholder="enter your phone">
+              </div>
+              <a class="contact-form__submit" href="mailto:info@saidyesmagazine.com">Send</a>
+            </form>
+          </div>
         </div>
       </div>
     </section>
-
   </main>
 
-
-  <!-- =====================================================
-       FOOTER
-       ===================================================== -->
   <footer class="site-footer" aria-label="Site footer">
     <div class="container">
       <div class="footer-inner">
-
         <div class="footer-left">
           <ul class="footer-links" role="list">
             <li><a href="index.html">Home</a></li>
@@ -267,41 +217,42 @@
             <li><a href="#">Get inspired</a></li>
             <li><a href="#">Contact us</a></li>
           </ul>
+        </div>
 
+        <div class="footer-right">
           <div class="footer-follow">
-            <span class="follow-label">Follow Us</span>
-            <a href="#" class="follow-handle" target="_blank" rel="noopener">@SaidYes</a>
-            <span class="follow-podcast">Listen to our podcast</span>
-            <div class="footer-social-icons" role="list">
-              <a href="#" aria-label="Instagram" target="_blank" rel="noopener" role="listitem">
-                <img src="SVG-say-yes/SVG/instagram-svgrepo-com.svg" alt="" width="20" height="20" aria-hidden="true">
+            <p class="footer-follow__title">Follow Us</p>
+            <a href="#" class="footer-follow__handle" target="_blank" rel="noopener">
+              <img src="img/SVG/instagram-svgrepo-com.svg" alt="" width="24" height="24" aria-hidden="true">
+              <span>@saidyes</span>
+            </a>
+          </div>
+
+          <div class="footer-podcast">
+            <p class="footer-podcast__title">Listen to our podcast</p>
+            <div class="footer-podcast__icons">
+              <a href="#" aria-label="Apple Podcasts" target="_blank" rel="noopener">
+                <img src="img/SVG/applepodcasts.svg" alt="" width="28" height="28" aria-hidden="true">
               </a>
-              <a href="#" aria-label="TikTok" target="_blank" rel="noopener" role="listitem">
-                <img src="SVG-say-yes/SVG/tik-tok-svgrepo-com.svg" alt="" width="20" height="20" aria-hidden="true">
+              <a href="#" aria-label="Spotify" target="_blank" rel="noopener">
+                <img src="img/SVG/spotify.svg" alt="" width="28" height="28" aria-hidden="true">
               </a>
-              <a href="#" aria-label="YouTube" target="_blank" rel="noopener" role="listitem">
-                <img src="SVG-say-yes/SVG/youtube-svgrepo-com.svg" alt="" width="20" height="20" aria-hidden="true">
-              </a>
-              <a href="#" aria-label="Apple Podcasts" target="_blank" rel="noopener" role="listitem">
-                <img src="SVG-say-yes/SVG/applepodcasts.svg" alt="" width="20" height="20" aria-hidden="true">
+              <a href="#" aria-label="YouTube" target="_blank" rel="noopener">
+                <img src="img/SVG/youtube-svgrepo-com.svg" alt="" width="28" height="28" aria-hidden="true">
               </a>
             </div>
           </div>
         </div>
-
-        <div class="footer-right">
-          <img src="logos/SAID-YES-LOGO01.png" alt="Said Yes Magazine" class="footer-logo" loading="lazy">
-        </div>
-
       </div>
     </div>
 
     <div class="footer-bottom">
       <div class="container">
-        <p>Copyright &copy; <span id="footer-year"></span> Said Yes Magazine</p>
+        <p>Copyright <span id="footer-year"></span> - Said Yes Magazine</p>
         <nav class="footer-bottom-links" aria-label="Footer legal links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
+          <a href="#">Terms &amp; conditions</a>
+          <span class="footer-bottom-separator" aria-hidden="true">•</span>
+          <a href="#">Privacy policy</a>
         </nav>
       </div>
     </div>

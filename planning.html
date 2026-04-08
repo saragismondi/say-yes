@@ -37,7 +37,7 @@
   <main id="main-content">
 
     <!-- ── 1. HERO ──────────────────────────────────────── -->
-    <section class="page-hero" aria-label="Planning & Inspiration hero">
+    <section class="page-hero planning-page-hero" aria-label="Planning & Inspiration hero">
 
       <div class="page-hero__bg">
         <img src="img/02 PLANNING/PLANNING-HERO.jpg" alt="Wedding planning inspiration">
@@ -53,16 +53,16 @@
 
 
     <!-- ── 2. INTRO HEADLINE ─────────────────────────────── -->
-    <nav class="site-nav planning-hero-nav" aria-label="Main navigation">
-      <div class="container planning-hero-nav__inner">
-        <ul class="nav-list planning-hero-nav__list" id="nav-list" role="list">
-          <li><a href="index.html" class="planning-hero-nav__link">Home</a></li>
-          <li><a href="blog.html" class="planning-hero-nav__link planning-hero-nav__link--active">Planning &amp; Inspiration</a></li>
-          <li><a href="podcast.html" class="planning-hero-nav__link">Podcast</a></li>
-          <li><a href="marriage.html" class="planning-hero-nav__link">Marriage</a></li>
-          <li><a href="about.html" class="planning-hero-nav__link">About us</a></li>
+    <nav class="site-nav home-hero-nav" aria-label="Main navigation">
+      <div class="container">
+        <ul class="nav-list" id="nav-list" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="planning.html" class="active">Planning &amp; Inspiration</a></li>
+          <li><a href="podcast.html">Podcast</a></li>
+          <li><a href="marriage.html">Marriage</a></li>
+          <li><a href="about.html">About us</a></li>
         </ul>
-        <button class="nav-toggle planning-hero-nav__toggle" id="nav-toggle"
+        <button class="nav-toggle" id="nav-toggle"
                 aria-label="Toggle navigation" aria-expanded="false"
                 aria-controls="nav-list">
           <span></span>
@@ -74,7 +74,7 @@
 
     <section class="section blog-intro">
       <div class="container">
-        <h2>Your <em>perfect</em> day starts here!</h2>
+        <p class="blog-intro__title">Your <span class="blog-intro__accent">perFect</span> day starts here!</p>
       </div>
     </section>
 
@@ -94,13 +94,9 @@
             <img src="img/02 PLANNING/IMG-04.jpg" alt="Wedding Planning Checklist">
           </div>
 
-          <div class="blog-featured__info">
-            <p class="eyebrow">Featured article</p>
-            <h2>The Ultimate Wedding Planning Checklist: From 'Yes' to 'I Do'</h2>
-            <p class="card-label">Subtitle</p>
-            <p class="card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-            <p class="card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="#" class="read-more">Read more →</a>
+          <div class="blog-featured__footer">
+            <p class="blog-featured__excerpt"><span class="blog-featured__excerpt-accent">Congratulations!</span> The ring is on, the news is shared, and now reality is setting in: you have a wedding to plan. While the process can feel like a whirlwind, staying organized is the secret to keeping your sanity (and your budget) intact. Use this timeline-based checklist to ensure no detail is left behind.</p>
+            <a href="#" class="blog-featured__link">Read more +</a>
           </div>
 
         </article>
@@ -114,42 +110,27 @@
       <div class="container">
         <div class="blog-cards-row__grid">
 
-          <article class="card">
-            <div class="card-img">
-              <img src="img/IMG-RANDOM/IMG-01.jpg" alt="Article 02">
-            </div>
-            <div class="card-body">
-              <p class="eyebrow">Article 02</p>
-              <h3 class="card-title">News title</h3>
-              <p class="card-label">Subtitle</p>
-              <p class="card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="#" class="read-more">Read more →</a>
+          <article class="planning-card">
+            <p class="planning-card__title">Article 02</p>
+            <p class="planning-card__subtitle">Subtitle</p>
+            <div class="planning-card__img">
+              <img src="img/02 PLANNING/IMG-06.jpg" alt="Article 02">
             </div>
           </article>
 
-          <article class="card">
-            <div class="card-img">
-              <img src="img/IMG-RANDOM/IMG-02.jpg" alt="Article 03">
-            </div>
-            <div class="card-body">
-              <p class="eyebrow">Article 03</p>
-              <h3 class="card-title">News title</h3>
-              <p class="card-label">Subtitle</p>
-              <p class="card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="#" class="read-more">Read more →</a>
+          <article class="planning-card">
+            <p class="planning-card__title">Article 03</p>
+            <p class="planning-card__subtitle">Subtitle</p>
+            <div class="planning-card__img">
+              <img src="img/02 PLANNING/IMG-06.jpg" alt="Article 03">
             </div>
           </article>
 
-          <article class="card">
-            <div class="card-img">
-              <img src="img/02 PLANNING/IMG-04.jpg" alt="Article 04">
-            </div>
-            <div class="card-body">
-              <p class="eyebrow">Article 04</p>
-              <h3 class="card-title">News title</h3>
-              <p class="card-label">Subtitle</p>
-              <p class="card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="#" class="read-more">Read more →</a>
+          <article class="planning-card">
+            <p class="planning-card__title">Article 04</p>
+            <p class="planning-card__subtitle">Subtitle</p>
+            <div class="planning-card__img">
+              <img src="img/02 PLANNING/IMG-06.jpg" alt="Article 04">
             </div>
           </article>
 
@@ -173,45 +154,43 @@
       <div class="container">
         <div class="decor-feature__grid">
 
-          <!-- Main large article -->
           <article class="decor-feature__main">
-            <div class="card-img">
-              <img src="img/IMG-RANDOM/IMG-05.jpg" alt="Wedding Decor Styles">
+            <div class="decor-feature__main-heading">
+              <p class="decor-feature__main-title">Wedding Decor:</p>
+              <p class="decor-feature__main-subtitle">3 Stunning Styles to Transform Your Venue</p>
             </div>
-            <div class="card-body">
-              <p class="eyebrow">Decoration</p>
-              <h2 class="card-title">Wedding Decor: 3 Stunning Styles to Transform Your Venue</h2>
-              <p class="card-label">Subtitle</p>
-              <p class="card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-              <a href="#" class="read-more">Read more →</a>
+            <div class="decor-feature__main-img">
+              <img src="img/02 PLANNING/IMG-04.jpg" alt="Wedding Decor Styles">
+            </div>
+            <div class="decor-feature__main-body">
+              <p class="decor-feature__main-text">The right decor doesn't just fill a room; it tells your story. Whether you are aiming for a cozy gathering or a grand celebration, your aesthetic sets the tone for the entire day. If you are feeling overwhelmed by Pinterest boards, focusing on one cohesive "vibe" can help narrow down your choices.</p>
+              <div class="decor-feature__main-footer">
+                <p class="decor-feature__main-text">Here are three distinct wedding styles to inspire your vision:</p>
+                <a href="#" class="decor-feature__main-link">Read more +</a>
+              </div>
             </div>
           </article>
 
-          <!-- Side articles -->
           <div class="decor-feature__side">
 
-            <article class="featured-side-card">
-              <div class="featured-side-card__img">
+            <article class="decor-side-card">
+              <p class="decor-side-card__title">Style 02</p>
+              <p class="decor-side-card__subtitle">Subtitle</p>
+              <div class="decor-side-card__img">
                 <img src="img/02 PLANNING/IMG-06.jpg" alt="Style 02">
               </div>
-              <div class="card-body">
-                <p class="eyebrow">Style 02</p>
-                <p class="card-label">Subtitle</p>
-                <p class="card-excerpt">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</p>
-                <a href="#" class="read-more">Read more →</a>
-              </div>
+              <p class="decor-side-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a href="#" class="decor-side-card__link">Read more +</a>
             </article>
 
-            <article class="featured-side-card">
-              <div class="featured-side-card__img">
-                <img src="img/IMG-RANDOM/IMG-01.jpg" alt="Style 04">
+            <article class="decor-side-card">
+              <p class="decor-side-card__title">Style 04</p>
+              <p class="decor-side-card__subtitle">Subtitle</p>
+              <div class="decor-side-card__img">
+                <img src="img/02 PLANNING/IMG-06.jpg" alt="Style 04">
               </div>
-              <div class="card-body">
-                <p class="eyebrow">Style 04</p>
-                <p class="card-label">Subtitle</p>
-                <p class="card-excerpt">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</p>
-                <a href="#" class="read-more">Read more →</a>
-              </div>
+              <p class="decor-side-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a href="#" class="decor-side-card__link">Read more +</a>
             </article>
 
           </div>
@@ -222,43 +201,47 @@
 
 
     <!-- ── 7. DRESS & BEAUTY CARDS ───────────────────────── -->
-    <section class="section dress-beauty">
-      <div class="container">
-        <div class="dress-beauty__grid">
+    <section class="section planning-choice" id="section-planning">
+      <div class="planning-choice__grid">
 
-          <article class="card">
-            <div class="card-img">
-              <img src="img/02 PLANNING/DRESS-BANNER.png" alt="Dress article">
+        <section class="planning-choice__banner" aria-label="Make the right choice">
+          <div class="planning-choice__banner-img">
+            <img src="img/02 PLANNING/DRESS-BANNER.png" alt="Bride looking marvelous">
+          </div>
+          <div class="planning-choice__banner-copy">
+            <!-- <p class="planning-choice__banner-title">Make the Right choice</p>
+            <p class="planning-choice__banner-subtitle">look marvelous!</p> -->
+          </div>
+        </section>
+
+        <div class="planning-choice__side">
+          <article class="choice-side-card">
+            <p class="choice-side-card__title">Dress article</p>
+            <p class="choice-side-card__subtitle">Subtitle</p>
+            <div class="choice-side-card__img">
+              <img src="img/02 PLANNING/IMG-06.jpg" alt="Dress article">
             </div>
-            <div class="card-body">
-              <p class="eyebrow">Dress</p>
-              <h3 class="card-title">News title</h3>
-              <p class="card-label">Subtitle</p>
-              <p class="card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="#" class="read-more">Read more →</a>
-            </div>
+            <p class="choice-side-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="choice-side-card__link">Read more +</a>
           </article>
 
-          <article class="card">
-            <div class="card-img">
-              <img src="img/IMG-RANDOM/IMG-02.jpg" alt="Beauty article">
+          <article class="choice-side-card">
+            <p class="choice-side-card__title">Beauty article</p>
+            <p class="choice-side-card__subtitle">Subtitle</p>
+            <div class="choice-side-card__img">
+              <img src="img/02 PLANNING/IMG-06.jpg" alt="Beauty article">
             </div>
-            <div class="card-body">
-              <p class="eyebrow">Beauty</p>
-              <h3 class="card-title">News title</h3>
-              <p class="card-label">Subtitle</p>
-              <p class="card-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="#" class="read-more">Read more →</a>
-            </div>
+            <p class="choice-side-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="choice-side-card__link">Read more +</a>
           </article>
-
         </div>
+
       </div>
     </section>
 
 
     <!-- ── 8. MAKE THE RIGHT CHOICE BANNER ──────────────── -->
-    <section class="choice-banner" aria-label="Make the right choice">
+    <section class="choice-banner" aria-label="Make the right choice" hidden>
 
       <div class="choice-banner__img">
         <img src="img/02 PLANNING/DRESS-BANNER.png" alt="Bride looking marvelous">
@@ -303,8 +286,8 @@
               <a href="#" aria-label="Apple Podcasts" target="_blank" rel="noopener">
                 <img src="img/SVG/applepodcasts.svg" alt="" width="28" height="28" aria-hidden="true">
               </a>
-              <a href="#" aria-label="Instagram" target="_blank" rel="noopener">
-                <img src="img/SVG/instagram-svgrepo-com.svg" alt="" width="28" height="28" aria-hidden="true">
+              <a href="#" aria-label="Spotify" target="_blank" rel="noopener">
+                <img src="img/SVG/spotify.svg" alt="" width="28" height="28" aria-hidden="true">
               </a>
               <a href="#" aria-label="YouTube" target="_blank" rel="noopener">
                 <img src="img/SVG/youtube-svgrepo-com.svg" alt="" width="28" height="28" aria-hidden="true">
