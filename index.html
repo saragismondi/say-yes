@@ -27,14 +27,34 @@
   </header>
 
   <main id="main-content" class="home-main">
+
+    <!-- ── 1. HERO ──────────────────────────────────────────── -->
     <section class="hero-home" aria-label="Hero">
-      <img src="img/01 HOME/HOME-HERO.jpg" alt="Bride standing by a window">
+      <div class="hero-home__bg">
+        <img src="img/01 HOME/HOME-HERO.jpg" alt="Bride standing by a window">
+      </div>
+      <div class="hero-home__overlay">
+        <div class="container hero-home__content">
+          <h1 class="hero-home__title" aria-live="polite">
+            <span class="hero-slider__phrase is-active">True love is built every day.</span>
+            <span class="hero-slider__phrase">God writes the best love stories.</span>
+            <span class="hero-slider__phrase">Saying &ldquo;yes&rdquo; is just the beginning.</span>
+          </h1>
+          <a href="#" class="hero-home__btn">Explore content</a>
+          <div class="hero-slider__dots" aria-hidden="true">
+            <button class="hero-slider__dot is-active" data-index="0"></button>
+            <button class="hero-slider__dot" data-index="1"></button>
+            <button class="hero-slider__dot" data-index="2"></button>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- ── 2. NAV ────────────────────────────────────────────── -->
     <nav class="site-nav home-hero-nav" aria-label="Main navigation">
       <div class="container">
         <ul class="nav-list" id="nav-list" role="list">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="planning.html">Planning &amp; Inspiration</a></li>
           <li><a href="podcast.html">Podcast</a></li>
           <li><a href="marriage.html">Marriage</a></li>
@@ -48,68 +68,30 @@
       </div>
     </nav>
 
-    <section class="section wsy-section">
+    <!-- ── 3. ABOUT ──────────────────────────────────────────── -->
+    <section class="section home-about">
       <div class="container">
-        <div class="wsy-intro">
-          <div class="wsy-title" aria-label="We said yes">
-            <span class="wsy-said">WE SAID</span>
-            <img src="logos/YES01.png" alt="yes" class="wsy-yes">
+        <div class="home-about__grid">
+
+          <div class="home-about__logo">
+            <img src="logos/SAID-YES-LOGO01.png" alt="Said Yes Magazine">
           </div>
-          <p class="wsy-sub">Get inspired by reading<br>these beautiful stories</p>
-        </div>
 
-        <div class="wsy-grid">
-          <article class="wsy-card">
-            <div class="wsy-card__img">
-              <img src="img/IMG-RANDOM/IMG-05.jpg" alt="Man and woman's name">
-            </div>
-            <div class="wsy-card__body">
-              <p class="wsy-card__title">Man &amp; Woman&apos;s name</p>
-              <p class="wsy-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-              <a href="#" class="wsy-card__link">Read more</a>
-            </div>
-          </article>
+          <div class="home-about__content">
+            <p class="home-about__eyebrow">About us</p>
+            <p>Said Yes is a platform dedicated to supporting couples from engagement to marriage and beyond. We combine inspiration, practical tools, and value-based content to build strong, intentional, and lasting relationships.</p>
+          </div>
 
-          <article class="wsy-card">
-            <div class="wsy-card__img">
-              <img src="img/IMG-RANDOM/IMG-05.jpg" alt="Man and woman's name">
-            </div>
-            <div class="wsy-card__body">
-              <p class="wsy-card__title">Man &amp; Woman&apos;s name</p>
-              <p class="wsy-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-              <a href="#" class="wsy-card__link">Read more</a>
-            </div>
-          </article>
-
-          <article class="wsy-card">
-            <div class="wsy-card__img">
-              <img src="img/IMG-RANDOM/IMG-05.jpg" alt="Man and woman's name">
-            </div>
-            <div class="wsy-card__body">
-              <p class="wsy-card__title">Man &amp; Woman&apos;s name</p>
-              <p class="wsy-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-              <a href="#" class="wsy-card__link">Read more</a>
-            </div>
-          </article>
-
-          <article class="wsy-card">
-            <div class="wsy-card__img">
-              <img src="img/IMG-RANDOM/IMG-05.jpg" alt="Man and woman's name">
-            </div>
-            <div class="wsy-card__body">
-              <p class="wsy-card__title">Man &amp; Woman&apos;s name</p>
-              <p class="wsy-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-              <a href="#" class="wsy-card__link">Read more</a>
-            </div>
-          </article>
         </div>
       </div>
     </section>
 
+    <!-- ── 4. QUOTE ──────────────────────────────────────────── -->
     <section class="home-quote-banner" aria-label="What God has joined together">
       <img src="img/01 HOME/PHRASE-BANNER.jpg" alt="What God has joined together let no one separate">
     </section>
 
+    <!-- ── 5. FEATURED ARTICLES ─────────────────────────────── -->
     <section class="section featured-section">
       <div class="container">
         <div class="featured-grid">
@@ -152,27 +134,47 @@
       </div>
     </section>
 
+    <!-- ── 6. WE SAID YES BANNER ─────────────────────────────── -->
+    <section class="wsy-banner" aria-label="We said yes">
+      <div class="wsy-banner__inner">
+        <div class="wsy-banner__brand">
+          <span class="wsy-said">WE SAID</span>
+          <img src="logos/YES01.png" alt="yes" class="wsy-yes">
+        </div>
+        <p class="wsy-sub">Get inspired by reading<br>these beautiful stories</p>
+      </div>
+    </section>
+
+    <!-- ── 7. STORY SECTION ──────────────────────────────────── -->
+    <section class="section home-story">
+      <div class="container">
+        <div class="home-story__grid">
+          <div class="home-story__img-frame">
+            <div class="home-story__img">
+              <img src="img/IMG-RANDOM/IMG-05.jpg" alt="Couple story">
+            </div>
+          </div>
+          <div class="home-story__body">
+            <p class="home-story__title">The day they learned to choose each other</p>
+            <p class="home-story__text">Jennifer always thought love was something that simply happened. Meeting Andrés was easy, natural—almost as if it had already been written. But what she never imagined was that loving also meant deciding.</p>
+            <p class="home-story__text">After two years together, the first serious arguments came. Differences in money, time, expectations. Everything seemed to shake.</p>
+            <p class="home-story__text">One night, in the middle of an uncomfortable silence, Andrés said: "Loving you isn't always easy… but it is always my choice."</p>
+            <p class="home-story__text">That day they understood something: love is not just emotion, it is commitment. It's not just feeling—it's choosing.</p>
+            <p class="home-story__text">Today, married, they still have differences. But they also have something stronger: the daily decision to keep saying "yes."</p>
+            <a href="#" class="home-story__link">Read more stories like this</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 8. PODCAST BANNER ─────────────────────────────────── -->
     <section class="home-podcast-banner" aria-label="Said Yes Podcast">
       <a href="podcast.html">
         <img src="img/01 HOME/PODCAST-BANNER.jpg" alt="Said Yes Podcast listen now">
       </a>
     </section>
 
-    <section class="section home-about">
-      <div class="container">
-        <div class="home-about__grid">
-          <div class="home-about__logo">
-            <img src="logos/SAID-YES-LOGO01.png" alt="Said Yes Magazine">
-          </div>
-          <div class="home-about__content">
-            <p class="home-about__eyebrow">About us</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- ── 9. CONTACT ────────────────────────────────────────── -->
     <section class="section contact-section">
       <div class="contact-section__split">
         <div class="contact-section__media">
@@ -193,7 +195,7 @@
                 <input id="home-name" type="text" class="contact-form__input" placeholder="enter your name" aria-label="Name">
               </div>
               <div class="contact-form__group">
-                <label class="contact-form__label" for="home-email">email adress</label>
+                <label class="contact-form__label" for="home-email">email address</label>
                 <input id="home-email" type="email" class="contact-form__input" placeholder="enter your email" aria-label="Email address">
               </div>
               <div class="contact-form__group">
@@ -206,8 +208,12 @@
         </div>
       </div>
     </section>
+
   </main>
 
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
   <footer class="site-footer" aria-label="Site footer">
     <div class="container">
       <div class="footer-inner">

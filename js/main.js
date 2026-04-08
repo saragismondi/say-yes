@@ -58,6 +58,40 @@
   }
 
   /* ----------------------------------------------------------
+     HERO PHRASE SLIDER
+     ---------------------------------------------------------- */
+  const phrases = Array.from(document.querySelectorAll('.hero-slider__phrase'));
+  const dots    = Array.from(document.querySelectorAll('.hero-slider__dot'));
+
+  if (phrases.length && dots.length) {
+    let current = 0;
+    let timer;
+
+    const goTo = (index) => {
+      phrases[current].classList.remove('is-active');
+      dots[current].classList.remove('is-active');
+      current = (index + phrases.length) % phrases.length;
+      phrases[current].classList.add('is-active');
+      dots[current].classList.add('is-active');
+    };
+
+    const startTimer = () => {
+      clearInterval(timer);
+      timer = setInterval(() => goTo(current + 1), 4000);
+    };
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        goTo(Number(dot.dataset.index));
+        startTimer();
+      });
+    });
+
+    startTimer();
+  }
+
+
+  /* ----------------------------------------------------------
      PODCAST SEARCH
      ---------------------------------------------------------- */
   const episodesSearchInput = document.querySelector('.episodes-search__input');
